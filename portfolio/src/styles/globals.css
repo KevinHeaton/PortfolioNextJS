@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+img {
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+h1 {
+	font-family: 'Antic Didone', serif;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'GFS Didot', serif;
+}
+
+p, a, li, ul, ol, span, button, input, textarea, select, label, div {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #8993A5;
+}
+
+
+
+/* Modal */
+
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+.modalBackdrop {
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 125px;
+}
+
+.modalContainer {
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.modalContainer img {
+  height: auto;
+  width: 400px;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.modalContainer p {
+  margin: 10px;
+}
+
+button, .closebtn {
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+  margin: 15px 15px 30px 15px;
+	padding: 10px 15px;	
+}
+
+/* End Modal */
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translatey(100%);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+
+/* scroll-snap for porojects on phone screens */
+
+@media only screen and (max-width: 640px){
+	* {
+		padding: 0; margin: 0;
+		box-sizing: border-box;
+	}
+
+	.container {
+		display: flex;
+		overflow-x: scroll;
+		padding: 12px;
+		height: auto;
+		width: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 12px;
+		border-radius: 8px;
+		gap: 6px;
+		margin: 1rem auto;
+	}
+
+	.container .item {
+		flex: 0 0 65%;
+		border-radius: 8px;
+		scroll-snap-align: start;
+	}
+}
