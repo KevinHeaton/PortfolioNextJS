@@ -3,7 +3,7 @@ import Modal from "./modal";
 import Image from 'next/image';
 
 const ProjectList = () => {
-  
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [projects] = useState([
@@ -20,7 +20,7 @@ const ProjectList = () => {
       description: 'Quickly find information on your favorite Marvel Characters!',
       github: 'https://github.com/KevinHeaton/Super-Hero-Wiki',
       deployed: 'https://kevinheaton.github.io/Super-Hero-Wiki/',
-      pic: 'SUPERWIKI',
+      pic: 'SUPERWIKII',
       id: '2'
     },
     {
@@ -52,7 +52,7 @@ const ProjectList = () => {
       description: 'Keep track of your tasks in a kanban board format.',
       github: 'https://github.com/KevinHeaton/taskinator',
       deployed: 'https://kevinheaton.github.io/taskinator/',
-      pic: 'TASKINATOR',
+      pic: 'TASKINATORR',
       id: '6'
     },
     {
