@@ -3,6 +3,7 @@ import Modal from "./modal";
 import Image from 'next/image';
 
 const ProjectList = () => {
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [projects] = useState([
