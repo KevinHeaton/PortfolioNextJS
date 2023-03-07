@@ -6,6 +6,12 @@ const nextConfig = {
 module.exports = nextConfig
 
 module.exports = {
+  images: {
+    unoptimized: true,
+  },
+}
+
+module.exports = {
   reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
