@@ -2,7 +2,7 @@ import react from 'react';
 import Image from 'next/image';
 
 function Modal({onClose, currentProject}) {
-  const { name, description, github, deployed, pic } = currentProject;
+  const { name, description, github, deployed, pic } = currentProject || {};
 
   return (
     <div className="modalBackdrop">
