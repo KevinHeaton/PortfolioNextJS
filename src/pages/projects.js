@@ -20,7 +20,7 @@ const ProjectList = () => {
       description: 'Quickly find information on your favorite Marvel Characters!',
       github: 'https://github.com/KevinHeaton/Super-Hero-Wiki',
       deployed: 'https://kevinheaton.github.io/Super-Hero-Wiki/',
-      pic: 'SUPERWIKII',
+      pic: 'SUPERWIKI',
       id: '2'
     },
     {
@@ -52,7 +52,7 @@ const ProjectList = () => {
       description: 'Keep track of your tasks in a kanban board format.',
       github: 'https://github.com/KevinHeaton/taskinator',
       deployed: 'https://kevinheaton.github.io/taskinator/',
-      pic: 'TASKINATORR',
+      pic: 'TASKINATOR',
       id: '6'
     },
     {
