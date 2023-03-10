@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Main page general styles */
 img {
   border-radius: 5%;
   overflow: hidden;
 }
-
 
 h1 {
 	font-family: 'Antic Didone', serif;
@@ -21,11 +20,10 @@ p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #8993A5;
 }
-
+/* End Main page general styles */
 
 
 /* Modal */
-
 .card {
   width: 25%;
   text-align: center;
@@ -74,9 +72,9 @@ button, .closebtn {
   margin: 15px 15px 30px 15px;
 	padding: 10px 15px;	
 }
-
 /* End Modal */
 
+/* animation styles */
 .animate-on-scroll {
   opacity: 0;
   transition: opacity 1s ease;
@@ -95,10 +93,9 @@ button, .closebtn {
     transform: translatey(0);
   }
 }
-
+/* end animation styles */
 
 /* scroll-snap for porojects on phone screens */
-
 @media only screen and (max-width: 640px){
 	* {
 		padding: 0; margin: 0;
@@ -124,3 +121,4 @@ button, .closebtn {
 		scroll-snap-align: start;
 	}
 }
+/* end scroll-snap for porojects on phone screens */

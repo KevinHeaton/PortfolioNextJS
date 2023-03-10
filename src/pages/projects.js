@@ -1,11 +1,14 @@
+// Description: This page displays all of my projects. When an image is clicked, the modal will open and display the current project.
+
 import React, { useState } from 'react';
 import Modal from "./modal";
 import Image from 'next/image';
 
 const ProjectList = () => {
-
+  // modal state
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // array of project objects
   const [projects] = useState([
     {
       name: 'Who-Do',
@@ -89,6 +92,7 @@ const ProjectList = () => {
     }
   ])
 
+  // current project state
   const [currentProject, setCurrentProject] = useState();
   const toggleModal = (image, i) => {
     setCurrentProject({...image, index: i});
@@ -96,6 +100,8 @@ const ProjectList = () => {
   }
 
   return (
+
+    // map over projects array and display each projec. When an image is clicked, the modal will open and display the current project.
     <div className="min-w-full flex justify-center align-middle p-4">
     {isModalOpen && (
     <Modal currentProject={currentProject} onClose={toggleModal} />

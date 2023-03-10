@@ -1,3 +1,7 @@
+// Description: This is the modal that will pop up when the user clicks on the resume button
+// This is currently not in use however it is here for possible future use.
+
+
 import react from 'react';
 
 

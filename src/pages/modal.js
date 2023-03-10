@@ -1,7 +1,10 @@
+// Description: Modal component for displaying project details
+
 import react from 'react';
 import Image from 'next/image';
 
 function Modal({onClose, currentProject}) {
+  // destructure the current project object
   const { name, description, github, deployed, pic } = currentProject || {};
 
   return (

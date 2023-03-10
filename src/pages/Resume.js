@@ -1,5 +1,7 @@
+// Description: This is the resume page. It contains a button that opens a modal with my resume.
+// This is currently not in use however it is here for possible future use.
+
 import React, { useState } from 'react';
-import resumeModal from './resumeModal';
 import { Document, Page } from 'react-pdf';
 import ResumeModalButton from './resumeModal';
 
